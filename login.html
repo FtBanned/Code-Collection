@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LogIn</title>
+    <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./login.css">
+</head>
+<body>
+    <div id="language-selector" class="box">
+             <select id="language-select">
+            <option value="az">Azerbaycanca</option>
+            <option value="tr">Türkçe</option>
+            <option value="en">English</option>
+            <option value="es">Español</option> 
+            <option value="ar">العربية</option>
+            <option value="fr">Français</option> 
+            <option value="ru">Русский</option> 
+            <option value="de">Deutsch</option>
+            <option value="ja">日本語</option>
+            <option value="vi">Tiếng Việt</option> 
+            <option value="hi">हिन्दी</option> 
+             </select>
+    </div>
+    <div class="container" id="container">
+        <div class="form-container sign-up-container">
+            <form action="#">
+                <h1 data-translate="signUp">Create Account</h1>
+                <div class="social-container">
+                    <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                    <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                <span data-translate="orUseEmail">or use your email for registration</span>
+                <input type="text" placeholder="Name" data-translate="name" />
+                <input type="email" placeholder="Email" data-translate="email" />
+                <input type="password" placeholder="Password" data-translate="password" />
+                <button data-translate="signUp">Sign Up</button>
+            </form>
+        </div>
+        <div class="form-container sign-in-container">
+            <form action="#">
+                <h1 data-translate="signIn">Sign in</h1>
+                <div class="social-container">
+                    <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                    <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                <span data-translate="orUseEmail">or use your account</span>
+                <input type="email" placeholder="Email" data-translate="email" />
+                <input type="password" placeholder="Password" data-translate="password" />
+                <a  href="#">Forgot your password?</a>
+                <button data-translate="signIn">Sign In</button>
+            </form>
+        </div>
+        <div class="overlay-container">
+            <div class="overlay">
+                <div class="overlay-panel overlay-left">
+                    <h1 data-translate="signIn">Welcome Back!</h1>
+                    <p data-translate="keepConnected">To keep connected with us please login with your personal info</p>
+                    <button class="ghost" id="signIn" data-translate="signIn">Sign In</button>
+                </div>
+                <div class="overlay-panel overlay-right">
+                    <h1 data-translate="signUp">Hello, Friend!</h1>
+                    <p data-translate="enterDetails">Enter your personal details and start journey with us</p>
+                    <button class="ghost" id="signUp" data-translate="signUp">Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </div>
+<script src="./login.js"></script>
+</body>
+</html>
